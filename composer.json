@@ -1,0 +1,33 @@
+{
+    "name": "bushart/make-artisan",
+    "description": "create trait and service class",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://github.com/busharthussain/artisan-commands"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "bushart\\MakeArtisan\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "busharthussain",
+            "email": "busharthussain@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "bushart\\MakeArtisan\\MakeArtisanServiceProvider"
+            ]
+        }
+    }
+}
